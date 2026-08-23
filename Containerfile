@@ -1,5 +1,5 @@
-ARG CUDA=true
 FROM python:3.14.6-slim-trixie
+ARG CUDA=true
 COPY --from=ghcr.io/astral-sh/uv:0.11.29 /uv /usr/local/bin
 COPY --from=ghcr.io/astral-sh/ruff:0.15.22 /ruff /usr/local/bin
 COPY --from=ghcr.io/astral-sh/ty:0.0.61 /ty /usr/local/bin
